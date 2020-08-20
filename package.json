@@ -12,6 +12,7 @@
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "install": "npm run build",
+    "postinstall": "npm run build",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
