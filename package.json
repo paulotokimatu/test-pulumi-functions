@@ -11,9 +11,9 @@
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc",
-    "install": "npm run build",
-    "postinstall": "echo 123 && npm run build",
-    "prepare": "npm run build",
+    "install": "echo 111 && npm run build",
+    "postinstall": "echo 222 && npm run build",
+    "prepare": "echo 333 && npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src",
