@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
-  "types": "src/index.d.ts",
+  "types": "dist/index.d.ts",
   "dependencies": {},
   "devDependencies": {
     "typescript": "^4.0.2"
@@ -12,7 +12,7 @@
     "test": "jest --config jestconfig.json",
     "build": "tsc",
     "install": "npm run build",
-    "postinstall": "npm run build",
+    "postinstall": "echo 123 && npm run build",
     "prepare": "npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
